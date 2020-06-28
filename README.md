@@ -1,46 +1,33 @@
 # php-pure-nwt
 
-#### Establish Localhost 
-- If you use apache, set up as follows in vhosts file:
+CRUD with prue PHP
 
-  - Listen 1010
-    <VirtualHost *:1010>
-      DocumentRoot "D:\SampleProject(CURD)\php-pure-nwt"
-      <Directory D:\SampleProject(CURD)\php-pure-nwt\>
-            DirectoryIndex index.php
-            AllowOverride All
-            Require all granted
-      </Directory>
-    </VirtualHost>
+## Features
 
-#### Call http://localhost:1010
+* Editor
 
-##### Establish Database 
-- Connect Mysql with your server, username & password that we use in project
-define('DB_SERVER', 'localhost'); <== server host
-define('DB_USERNAME', 'root'); <== username
-define('DB_PASSWORD', ''); <== password
-define('DB_NAME', 'demodb'); <== database name
+## To-do
+* Validation
+* Search
+* Use sass, webpack
+* Change frame to MVC
 
-- Create a database
-  - CREATE SCHEMA `demodb` ;
+## How-to
 
-- Create a table
-  - CREATE TABLE `users` (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    `name` VARCHAR(30) NOT NULL,
-    `address` VARCHAR(30) NOT NULL,
-    `phone` VARCHAR(50) NOT NULL,
-    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
+* Intstall **PHP, Apache, MySQL**
+* Edit v-hosts file to run project in localhost
+![image](https://user-images.githubusercontent.com/41044655/85939752-03bc3b80-b93e-11ea-8817-b3b113517e6c.png)
 
-- Insert data in table
-  - INSERT INTO users (name, address, phone)
-    VALUES ('John', 'Russia', '23456'),
-    ('Mary', 'Myanmar', '521168'),
-    ('Ruu', 'China', '484615'),
-    ('Haru', 'Japan', '84765');
+* Import **dbDump.sql** to use Database for CRUD
+*After imported the database, you can test CRUD.*
+:smile::hugs:	:smile:	
+* run <code>http://localhost:1010</code>
 
+## Using
 
-*After creating a database, you can test CRUD.*
-:yum::hugs:	:smile:	
+* <a href="https://getbootstrap.com/">Bootstrap</a>
+* <a href="http://php.net/">PHP</a>/<a href="http://mysql.com/">MySQL</a>
+
+## License
+
+MIT
